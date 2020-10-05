@@ -67,6 +67,10 @@ body{
                     }
     
             }/*img*/
+
+            img:hover{
+                opacity: 0.8;
+            }
     
             .header_nav{
     
@@ -142,6 +146,10 @@ body{
                             }/*a*/
                         }/*li*/
 
+                        li:hover{
+                            opacity: 0.8;
+                        }
+
                         .li_sp{
                             display: none;
 
@@ -154,14 +162,8 @@ body{
     
                         .contact_li{
                             background-color: green;
-                            padding-top: 20px;
-                            padding-bottom: 20px;
 
-                            @include pc{
-                                padding-top: 23.5px;
-                                padding-bottom: 23.5px;    
-                            }
-
+                        
                             @include tab{
                                 background-color: initial;
                             }
@@ -169,6 +171,16 @@ body{
                             a{
                                 line-height: 3em;
                                 color: white;
+                                display: block;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+
+                                @include pc{
+                                    padding-top: 23.5px;
+                                    padding-bottom: 23.5px;    
+                                }
+    
+
 
                                 .span_sp{
                                     display: none;
@@ -290,6 +302,19 @@ body{
 
         @include sp{
             height: 42.8vw;
+        }
+
+        #mainvisual_pc{
+            @include sp{
+                display: none;
+            }
+        }
+    
+        #mainvisual_sp{
+            display: none;
+            @include sp{
+                display: initial;
+            }
         }
 
         img {
