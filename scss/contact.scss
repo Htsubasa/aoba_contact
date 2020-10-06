@@ -170,6 +170,11 @@ body{
                             @include tab{
                                 background-color: initial;
                             }
+
+                            @include sp{
+                                margin-left: 0px;
+                                padding-left: 20px;
+                            }
     
                             a{
                                 line-height: 3em;
