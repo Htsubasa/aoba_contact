@@ -516,6 +516,16 @@ html body header .header_inner .header_nav ul .contact_li {
   }
 }
 
+html body header .header_inner .header_nav ul .contact_li .sp_span {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html body header .header_inner .header_nav ul .contact_li .sp_span {
+    display: initial;
+  }
+}
+
 html body header .header_inner .header_nav ul .contact_li a {
   line-height: 3em;
   color: white;
